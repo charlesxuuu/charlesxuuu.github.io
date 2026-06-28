@@ -1,0 +1,159 @@
+- key: "fused-www-2026"
+  tag: "WWW'2026"
+  year: 2026
+  title: "FUSED: Toward Federated Multimodal Retrieval across Sovereign Data Domains."
+  authors: "<strong>C. Xu</strong>, J. Li, M. Jin, W. I. Atlas, M. A. Spoljaric, E. C. H. Ngai, and J. Liu"
+  venue: "Proceedings of The ACM Web Conference (WWW)"
+  details: "pp. 8950-8960"
+
+- key: "wild-intelligence-ijcai-2026"
+  tag: "IJCAI'2026"
+  year: 2026
+  title: "Sustainable Intelligence for the Wild: Democratizing Ecological Monitoring via Knowledge-Adaptive Edge Expert Agents."
+  authors: "J. Li, H. Fang, <strong>C. Xu</strong>, M. Zhang, J. Liu, W. I. Atlas, K. M. Connors, and M. A. Spoljaric"
+  venue: "International Joint Conference on Artificial Intelligence (IJCAI)"
+  details: "Accepted"
+
+- key: "sonar-compression-wacv-2026"
+  tag: "WACV'2026"
+  year: 2026
+  title: "Self-Supervised Compression and Artifact Correction for Streaming Underwater Imaging Sonar."
+  authors: "R. Qian, <strong>C. Xu</strong>, X. Ma, H. Fang, Y. Jin, W. I. Atlas, and J. Liu"
+  venue: "Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  details: "pp. 4201-4211"
+
+- key: "salmon-foundation-ai-ijcai-2025"
+  tag: "IJCAI'2025"
+  year: 2025
+  title: "Exploring Multimodal Foundation AI and Expert-in-the-Loop for Sustainable Management of Wild Salmon Fisheries in Indigenous Rivers."
+  authors: "<strong>C. Xu</strong>, Y. Jin, S. Ma, R. Qian, H. Fang, J. Liu, X. Liu, E. C. H. Ngai, W. I. Atlas, K. M. Connors, and M. A. Spoljaric"
+  venue: "Proceedings of International Joint Conference on Artificial Intelligence (IJCAI)"
+  details: "pp. 9954-9962"
+
+- key: "salmon-risk-aware-iet-2025"
+  tag: "IET SES'2025"
+  year: 2025
+  title: "A Risk-Aware Design and Control Scheme for Canadian Salmon Wildlife Monitoring Systems."
+  authors: "C. Kang, H. Wei, <strong>C. Xu</strong>, H. Fang, H. Zhao, G. Wu, H. Jiang, N. Zhang, and J. Liu"
+  venue: "IET Smart Energy Systems"
+  details: ""
+
+- key: "salina-sensys-2024"
+  tag: "SenSys'2024"
+  year: 2024
+  title: "SALINA: Towards Sustainable Live Sonar Analytics in Wild Ecosystems."
+  authors: "<strong>C. Xu</strong>, R. Qian, H. Fang, X. Ma, W. I. Atlas, J. Liu, and M. A. Spoljaric"
+  venue: "Proceedings of ACM Conference on Embedded Networked Sensor Systems (SenSys)"
+  details: "pp. 68-81"
+
+- key: "mobile-panorama-comcom-2024"
+  tag: "ComCom'2024"
+  year: 2024
+  title: "Enabling Lightweight Immersive User Interaction in Smart Buildings through Learning-Based Mobile Panorama Streaming."
+  authors: "<strong>C. Xu</strong>, Z. Li, G. Huai, J. Zhao, Y. Zhu, X. Ma, and H. Wang"
+  venue: "Computer Communications"
+  details: "vol. 222, pp. 68-76"
+
+- key: "scalm-iwqos-2024"
+  tag: "IWQoS'2024"
+  year: 2024
+  title: "SCALM: Towards Semantic Caching for Automated Chat Services with Large Language Models."
+  authors: "J. Li, <strong>C. Xu</strong>, F. Wang, I. M. von Riedemann, C. Zhang, and J. Liu"
+  venue: "Proceedings of IEEE/ACM International Symposium on Quality of Service (IWQoS)"
+  details: "pp. 1-10"
+
+- key: "mobile-panorama-insai-2023"
+  tag: "INSAI'2023"
+  year: 2023
+  title: "Lightweight Immersive Interaction with Learning-Based Mobile Panorama Streaming for Smart Buildings."
+  authors: "<strong>C. Xu</strong>, Z. Li, G. Huai, J. Zhao, Y. Zhu, X. Ma, and H. Wang"
+  venue: "Proceedings of International Conference on Networking Systems of AI (INSAI)"
+  details: "pp. 347-354"
+
+- key: "hybrid-workloads-tcc-2021"
+  tag: "TCC'2021"
+  year: 2021
+  title: "Enhancing Performance and Energy Efficiency for Hybrid Workloads in Virtualized Cloud Environment."
+  authors: "<strong>C. Xu</strong>, X. Ma, R. Shea, H. Wang, and J. Liu"
+  venue: "IEEE Transactions on Cloud Computing"
+  details: "vol. 9, no. 1, pp. 168-181"
+
+- key: "mptcp-energy-ton-2020"
+  tag: "TON'2020"
+  year: 2020
+  title: "Measurement, Analysis, and Enhancement of Multipath TCP Energy Efficiency for Datacenters."
+  authors: "J. Zhao, J. Liu, H. Wang, <strong>C. Xu</strong>, W. Gong, and C. Xu"
+  venue: "IEEE/ACM Transactions on Networking"
+  details: "vol. 28, no. 1, pp. 57-70"
+
+- key: "mptcp-cloud-iwqos-2020"
+  tag: "IWQoS'2020"
+  year: 2020
+  title: "Revisiting Multipath Congestion Control for Virtualized Cloud Environments."
+  authors: "<strong>C. Xu</strong>, J. Zhao, J. Liu, and F. Chen"
+  venue: "Proceedings of IEEE/ACM International Symposium on Quality of Service (IWQoS)"
+  details: "pp. 1-10"
+
+- key: "multiple-vnics-systems-2018"
+  tag: "Systems'2018"
+  year: 2018
+  title: "On Multiple Virtual NICs in Cloud Computing: Performance Bottleneck and Enhancement."
+  authors: "<strong>C. Xu</strong>, H. Wang, R. Shea, F. Wang, and J. Liu"
+  venue: "IEEE Systems Journal"
+  details: "vol. 12, no. 3, pp. 2417-2427"
+
+- key: "virtual-tour-icmew-2018"
+  tag: "ICMEW'2018"
+  year: 2018
+  title: "Smartphone-Based Crowdsourcing for Panoramic Virtual Tour Construction."
+  authors: "<strong>C. Xu</strong>, Q. Chen, J. Liu, Z. Wang, and Y. Hu"
+  venue: "Proceedings of IEEE International Conference on Multimedia and Expo Workshops (ICMEW)"
+  details: "pp. 1-4"
+
+- key: "mptcp-infocom-2017"
+  tag: "INFOCOM'2017"
+  year: 2017
+  title: "Multipath TCP for Datacenters: From Energy Efficiency Perspective."
+  authors: "J. Zhao, H. Wang, J. Liu, and <strong>C. Xu</strong>"
+  venue: "Proceedings of IEEE International Conference on Computer Communications (INFOCOM)"
+  details: "pp. 1-9"
+
+- key: "cloud-vm-energy-systems-2017"
+  tag: "Systems'2017"
+  year: 2017
+  title: "Energy Efficiency of Cloud Virtual Machines: From Traffic Pattern and CPU Affinity Perspectives."
+  authors: "<strong>C. Xu</strong>, Z. Zhao, H. Wang, R. Shea, and J. Liu"
+  venue: "IEEE Systems Journal"
+  details: "vol. 11, no. 2, pp. 835-845"
+
+- key: "memnet-cloud-2016"
+  tag: "CLOUD'2016"
+  year: 2016
+  title: "MemNet: Enhancing Throughput and Energy Efficiency for Hybrid Workloads via Para-Virtualized Memory Sharing."
+  authors: "<strong>C. Xu</strong>, X. Ma, R. Shea, H. Wang, and J. Liu"
+  venue: "Proceedings of IEEE International Conference on Cloud Computing (CLOUD)"
+  details: "pp. 980-983"
+
+- key: "network-energy-cloud-2014"
+  tag: "CLOUD'2014"
+  year: 2014
+  title: "On the Interplay between Network Traffic and Energy Consumption in Virtualized Environment: An Empirical Study."
+  authors: "<strong>C. Xu</strong>, Z. Zhao, H. Wang, and J. Liu"
+  venue: "Proceedings of IEEE International Conference on Cloud Computing (CLOUD)"
+  details: "pp. 392-399"
+
+- key: "information-potential-icccn-2014"
+  tag: "ICCCN'2014"
+  year: 2014
+  title: "Lightweight Construction of the Information Potential Field in Wireless Sensor Networks."
+  authors: "J. Du, S. Liu, <strong>C. Xu</strong>, K. Wang, H. Liu, and K. Sha"
+  venue: "Proceedings of IEEE International Conference on Computer Communications and Networks (ICCCN)"
+  details: "pp. 1-8"
+
+- key: "healthy-mass-2013"
+  tag: "MASS'2013"
+  year: 2013
+  title: "Healthy: A Diary System Based on Activity Recognition Using Smartphone."
+  authors: "K. Zhao, J. Du, C. Li, C. Zhang, H. Liu, and <strong>C. Xu</strong>"
+  venue: "Proceedings of IEEE International Conference on Mobile Ad-Hoc and Sensor Systems (MASS)"
+  details: "pp. 290-294"

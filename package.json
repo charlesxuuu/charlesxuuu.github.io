@@ -1,25 +1,22 @@
 {
-  "name": "academic-pages",
+  "name": "charlesxuuu.github.io",
   "version": "0.8.1.1",
-  "description": "Academic Pages Mistakes Jekyll theme npm build scripts",
+  "private": true,
+  "description": "Build scripts for Charles Chi Xu's academic website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/academicpages/academicpages.github.io"
+    "url": "https://github.com/charlesxuuu/charlesxuuu.github.io"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "contributors": [
-    "Michael Rose",
-    "Robert Zupko"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/academicpages/academicpages.github.io/issues"
+    "url": "https://github.com/charlesxuuu/charlesxuuu.github.io/issues"
   },
-  "homepage": "https://github.com/academicpages/academicpages.github.io",
+  "homepage": "https://charlesxuuu.github.io",
   "engines": {
     "node": ">= 0.10.0"
   },

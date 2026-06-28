@@ -4,6 +4,14 @@ _site/
 
 # Ignore the directory for local files during development
 local/
+.claude/
+
+# Ignore local source CV files
+*.tex
+
+# Ignore local Ruby/Bundler dependency installs
+.bundle/
+vendor/
 
 # Ignore the Gemfile that is generated
 Gemfile.lock

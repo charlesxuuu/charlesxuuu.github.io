@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Charles Chi Xu"
+title                    : "Chi (Charles) Xu"
 title_separator          : "-"
-name                     : &name "Charles Chi Xu"
+name                     : &name "Chi (Charles) Xu"
 description              : &description "Ph.D. student"
 url                      : https://charlesxuuu.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -22,9 +22,9 @@ repository               : "charlesxuuu/charlesxuuu.github.io"
 author:
   # Biographic information
   avatar           : "chi-profile.jpg"
-  name             : "Charles Chi Xu"
+  name             : "Chi (Charles) Xu"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D student"
+  bio              : "Ph.D. student"
   location         : "Vancouver, Canada"
   employer         : "Simon Fraser University"
   uri              : # URL
@@ -36,7 +36,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0001-9473-722X"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           :
   researchgate     : # URL
   scopus           : # URL
 
@@ -49,7 +49,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          :
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -87,7 +87,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -157,6 +157,7 @@ include:
   - _pages
   - files
 exclude:
+  - "*.tex"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

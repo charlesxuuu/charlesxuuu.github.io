@@ -1,0 +1,55 @@
+
+
+- title: "Salmon Farm"
+  date: "2025"
+  image: "/images/notes/salmon-farm.jpg"
+  tags: ["SalmonVision"]
+  body: "This is a salmon farm off the coast of British Columbia."
+
+- title: "Aurora"
+  date: "2025"
+  image: "/images/notes/aurora.jpg"
+  tags: ["Nature"]
+  body: "Green and pink aurora over Burnaby Mountain."
+
+- title: "Mitacs Connect Event"
+  date: "2025"
+  image: "/images/notes/mitacs-connect-event.jpg"
+  tags: ["SalmonVision"]
+  body: "Presenting our SalmonVision project."
+
+- title: "Ducks"
+  date: "2025"
+  image: "/images/notes/ducks.jpg"
+  tags: ["Wildlife"]
+  body: "Ducks at the Burnaby lake."
+
+- title: "Ducks and Canada Geese"
+  date: "2025"
+  image: "/images/notes/ducks-geese.jpg"
+  tags: ["Wildlife"]
+  body: "Ducks and Canada Geese at the Burnaby lake."
+
+- title: "Salmonvision Field Deployment in Wuikinuxv Nation"
+  date: "2025"
+  image: "/images/notes/wuikinuxv-team.jpg"
+  tags: ["SalmonVision", "Wuikinuxv"]
+  body: "Deploying the SalmonVision system in partnership with the Wuikinuxv Nation."
+
+- title: "Arriving at Port Hardy"
+  date: "2025"
+  image: "/images/notes/port-hardy.jpg"
+  tags: ["SalmonVision"]
+  body: ""
+
+- title: "Salmonvision Field Deployment in Haida Nation"
+  date: "2024"
+  image: "/images/notes/haida-team.jpg"
+  tags: ["SalmonVision", "Haida"]
+  body: "Our team deploying the SalmonVision system in partnership with the Haida Nation."
+
+- title: "My Cat Meowmeow"
+  date: "2023"
+  image: "/images/notes/my-cat.png"
+  tags: ["Cat"]
+  body: "This is my cat, living his best life."

@@ -1,0 +1,37 @@
+---
+layout: single
+title: "Notes"
+permalink: /notes/
+author_profile: true
+---
+
+<section class="notes-page">
+
+
+  {% assign notes = site.data.notes %}
+  {% if notes and notes.size > 0 %}
+    <div class="notes-grid">
+    {% for note in notes %}
+      <article class="note-card">
+        {% if note.image %}
+          <img class="note-card__image" src="{{ note.image | relative_url }}" alt="{{ note.title }}">
+        {% endif %}
+        <div class="note-card__body">
+          <div class="note-card__meta">
+            {% if note.date %}<time>{{ note.date }}</time>{% endif %}
+            {% if note.tags %}
+              <span>{{ note.tags | join: " · " }}</span>
+            {% endif %}
+          </div>
+          <h2>{{ note.title }}</h2>
+          <p>{{ note.body }}</p>
+        </div>
+      </article>
+    {% endfor %}
+    </div>
+  {% else %}
+    <div class="notes-empty">
+      <p>No public notes yet. Add entries in <code>_data/notes.yml</code> and place images in <code>images/notes/</code>.</p>
+    </div>
+  {% endif %}
+</section>

@@ -1,0 +1,23 @@
+- role: "Doctoral Researcher"
+  organization: "NetMedia Lab, Simon Fraser University"
+  dates: "Jan 2023-Present"
+  url: "https://www.sfu.ca/"
+  initials: "SFU"
+  logo:
+  summary: "Researching multimodal sensing, AIoT, and efficient networked computing for ecological monitoring and data stewardship."
+
+- role: "PSF Mitacs Research Fellow"
+  organization: "Pacific Salmon Foundation"
+  dates: "Apr 2025-Present"
+  url: "https://psf.ca/"
+  initials: "PSF"
+  logo:
+  summary: "Developing scalable AI and systems pipelines for conservation-oriented river and ocean monitoring."
+
+- role: "Visiting Researcher"
+  organization: "HKU IoT Lab, The University of Hong Kong"
+  dates: "May 2025-May 2026"
+  url: "https://www.hku.hk/"
+  initials: "HKU"
+  logo:
+  summary: "Collaborating on multimodal foundation models and vision-language systems for remote aquatic ecosystem monitoring."

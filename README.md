@@ -1,77 +1,56 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Charles Chi Xu Academic Website
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+This repository builds and deploys [charlesxuuu.github.io](https://charlesxuuu.github.io), Charles Chi Xu's academic website. It is based on the Academic Pages Jekyll theme, with active public content kept small and example theme content archived for future reference.
 
-# Getting Started
+## Site Structure
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- `_config.yml`: site metadata, author profile, collection settings, plugins, and build configuration.
+- `_pages/`: public standalone pages. The current live pages are the homepage, publications page, sitemap, and 404 page.
+- `_publications/`, `_talks/`, `_teaching/`, `_portfolio/`, `_posts/`: content collections kept for future expansion.
+- `images/`: live profile, favicon, and site image assets.
+- `files/`: public downloadable files.
+- `assets/`, `_sass/`, `_includes/`, `_layouts/`: theme styles, scripts, templates, and reusable components.
+- `_examples/academic-pages-samples/`: archived Academic Pages sample content and assets. Use these as references when adding new sections, but they are not published.
 
-See more info at https://academicpages.github.io/
+## Local Development
 
-## Running locally
-
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
+Install Ruby, Bundler, and Node.js, then install dependencies:
 
 ```bash
-docker build -t jekyll-site .
+bundle install
+npm install
 ```
 
-Next, run the container:
+Run the site locally:
+
 ```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+bundle exec jekyll serve -l -H localhost
 ```
 
-# Maintenance
+The site is available at `http://localhost:4000`. Restart the server after changing `_config.yml`.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Build the static site before publishing larger changes:
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+```bash
+bundle exec jekyll build
+```
 
-## Bugfixes and enhancements
+Rebuild minified JavaScript after editing `assets/js/_main.js` or plugin scripts:
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+```bash
+npm run build:js
+```
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Adding Content
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+Add new pages under `_pages/` and enable their links in `_data/navigation.yml` when they should appear in the header. Add publications, talks, teaching entries, portfolio items, or posts to their matching collection directories using the archived examples as front matter references. Store PDFs and other public downloads in `files/`; store page images in `images/`.
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+The `markdown_generator/` scripts and notebooks can help generate publication or talk markdown from TSV files.
+
+## Deployment
+
+GitHub Actions builds the site with Jekyll and deploys it to GitHub Pages on pushes to `master`. Use the `wip` branch for current work and keep `handcraft` as the clean baseline branch.
+
+## Maintenance
+
+Keep public content personal to this site. Do not reintroduce template demo pages into published directories unless they are rewritten as real content. After structural changes, run `bundle exec jekyll build` and inspect the affected pages locally.

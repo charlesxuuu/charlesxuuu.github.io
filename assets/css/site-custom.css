@@ -1,0 +1,553 @@
+/* Site-specific academic content components. Loaded after the theme CSS. */
+
+.profile-panel {
+  position: relative;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+  padding: 1.2rem 1.25rem;
+  border: 1px solid #f2f3f3;
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 100% 0, #eff0f1 0, rgba(255, 255, 255, 0) 12rem),
+    linear-gradient(135deg, #f8f8f8, #fff 66%);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.045);
+}
+
+.page__inner-wrap > header:has(.page__title:empty) {
+  display: none;
+}
+
+.page__content > .section-title:first-child {
+  margin-top: 0;
+}
+
+.page__title {
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid #f2f3f3;
+  font-size: 1.12em;
+  line-height: 1.25;
+}
+
+.author__avatar img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+}
+
+.profile-panel:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.35rem;
+  height: 100%;
+  border-radius: 8px 0 0 8px;
+  background: #7a8288;
+}
+
+.profile-panel:after {
+  content: none;
+}
+
+.profile-panel h1 {
+  margin: 0 0 0.45rem;
+  font-size: 1.563em;
+  line-height: 1.15;
+}
+
+.profile-panel p {
+  margin: 0 0 0.45rem;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.profile-panel a,
+.profile-panel a:hover {
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+.profile-panel p:last-child,
+.page-panel--compact p:last-child,
+.research-card p:last-child,
+.experience-card p:last-child,
+.publication-card p:last-child,
+.news-item p {
+  margin-bottom: 0;
+}
+
+.page-panel {
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #f2f3f3;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #f8f8f8, #fff 70%);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
+}
+
+.academic-section {
+  margin-bottom: 0.95rem;
+}
+
+.section-title {
+  margin-top: 1.05rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid #f2f3f3;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 1.12em;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.research-grid,
+.experience-grid,
+.experience-timeline,
+.publication-card-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.publication-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.research-card,
+.experience-card,
+.publication-card {
+  border: 1px solid #f2f3f3;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.research-card:hover,
+.experience-card:hover,
+.publication-card:hover {
+  border-color: #c3c7c9;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.055);
+  transform: translateY(-1px);
+}
+
+.research-card {
+  padding: 0.65rem 0.75rem;
+}
+
+.research-card span,
+.publication-card__venue {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  padding: 0.12rem 0.42rem;
+  border-radius: 4px;
+  background: #e7e9ea;
+  color: #5c6266;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.75em;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.research-card h3,
+.experience-card__topline h2,
+.experience-card__topline h3,
+.publication-card h2 {
+  margin: 0 0 0.2rem;
+  border-bottom: 0;
+  line-height: 1.25;
+}
+
+.research-card h3,
+.experience-card__topline h2,
+.experience-card__topline h3,
+.publication-card h2 {
+  font-size: 1em;
+}
+
+.research-card p,
+.news-item p {
+  font-size: 1em;
+  line-height: 1.42;
+}
+
+.news-list {
+  position: relative;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.news-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.6rem;
+  align-items: start;
+  padding: 0.38rem 0.55rem 0.38rem 0.7rem;
+  border-bottom: 1px solid #f2f3f3;
+  border-radius: 7px;
+  background: linear-gradient(90deg, #f7f8f8, #fff 78%);
+}
+
+.news-item:before {
+  content: "";
+  position: absolute;
+  top: 0.54rem;
+  left: 0;
+  width: 0.22rem;
+  height: calc(100% - 1.08rem);
+  border-radius: 999px;
+  background: #b6babe;
+}
+
+.news-item time {
+  color: #7a8288;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.research-sketch {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #f2f3f3;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.025);
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+.publication-tag {
+  display: inline-block;
+  width: 160px;
+  margin-bottom: 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: var(--primary-color, #7a8288);
+  color: #fff;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.publication-content {
+  font-size: 1em;
+  line-height: 1.42;
+}
+
+.publication-content a,
+.publication-title {
+  font-weight: 700;
+}
+
+.publication-venue {
+  margin-top: 0.18rem;
+  color: #777a7d;
+  font-size: 0.88em;
+  line-height: 1.4;
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.85rem 0.9rem;
+}
+
+.experience-card__mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.7rem;
+  border-radius: 6px;
+  background: #f2f3f3;
+  color: #7a8288;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.75em;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.experience-card__mark img {
+  max-width: 100%;
+  max-height: 3rem;
+}
+
+.experience-card__topline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.experience-card__topline span,
+.experience-card__org,
+.publication-card__authors,
+.publication-card__meta {
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.75em;
+}
+
+.experience-card__topline span,
+.publication-card__meta {
+  color: #898c8f;
+}
+
+.experience-card__org {
+  margin-bottom: 0.35rem;
+}
+
+.academic-hero--compact {
+  margin-bottom: 1.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f2f3f3;
+}
+
+.academic-hero--compact h1 {
+  margin: 0 0 0.45rem;
+  font-size: 1.563em;
+  line-height: 1.15;
+}
+
+.academic-lede {
+  max-width: 42rem;
+  margin-bottom: 0.75rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 2.35rem 1fr;
+  gap: 0.75rem;
+  padding: 0.85rem 0.9rem;
+}
+
+.publication-card__index {
+  color: #90979c;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.75em;
+  font-weight: 800;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.publication-card__authors {
+  margin-bottom: 0.3rem;
+}
+
+.publication-card__meta {
+  line-height: 1.45;
+}
+
+.section-link {
+  margin-top: 0.85rem;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.notes-page {
+  color: #333;
+}
+
+.notes-hero {
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid #f2f3f3;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff, #fafafa);
+}
+
+.notes-hero p,
+.notes-empty p {
+  margin: 0;
+}
+
+.notes-grid {
+  column-count: 1;
+  column-gap: 0.75rem;
+}
+
+.note-card {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 0.75rem;
+  overflow: hidden;
+  border: 1px solid #f2f3f3;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.045);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.note-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.note-card__body {
+  padding: 0.75rem 0.85rem 0.85rem;
+}
+
+.note-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.55rem;
+  margin-bottom: 0.35rem;
+  color: #898c8f;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-size: 0.75em;
+}
+
+.note-card h2 {
+  margin: 0 0 0.35rem;
+  border-bottom: 0;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+.note-card p {
+  margin: 0;
+  font-size: 0.92em;
+  line-height: 1.5;
+}
+
+.notes-empty {
+  padding: 1rem;
+  border: 1px dashed #d8dbdd;
+  border-radius: 8px;
+  background: #fff;
+  color: #777a7d;
+}
+
+.sidebar .author__name {
+  font-size: 1em;
+}
+
+.sidebar .author__bio,
+.sidebar .author__urls li,
+.sidebar .author__urls a {
+  font-size: 1em;
+}
+
+@media (max-width: 57.8124em) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar [itemscope] {
+    display: grid;
+    grid-template-columns: 5.25rem minmax(0, 1fr);
+    gap: 0.35rem 0.8rem;
+    align-items: center;
+  }
+
+  .author__avatar {
+    display: block;
+    width: 5.25rem;
+  }
+
+  .author__avatar img {
+    display: block;
+    width: 5.25rem;
+    height: 5.25rem;
+    max-width: 5.25rem;
+    border-radius: 50%;
+  }
+
+  .author__content {
+    display: block;
+    min-width: 0;
+    padding: 0;
+    line-height: 1.25;
+  }
+
+  .sidebar .author__name {
+    margin: 0 0 0.2rem;
+    font-size: 1em;
+    line-height: 1.2;
+  }
+
+  .author__bio {
+    margin: 0;
+  }
+
+  .author__urls-wrapper {
+    display: block;
+    grid-column: 1 / -1;
+    width: 100%;
+    cursor: default;
+  }
+
+  .author__urls-wrapper button {
+    display: none;
+  }
+
+  .author__urls {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    margin: 0.45rem 0 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .author__urls:before,
+  .author__urls:after {
+    display: none;
+  }
+
+  .sidebar .author__desktop {
+    display: block;
+  }
+
+  .author__urls li {
+    white-space: normal;
+  }
+
+  .author__urls a {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .research-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .experience-card {
+    grid-template-columns: 5rem 1fr;
+  }
+
+  .notes-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 37.49em) {
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}

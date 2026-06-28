@@ -1,0 +1,44 @@
+- key: "fused-www-2026"
+  short_venue: "WWW 2026"
+  tag: "WWW'2026"
+  year: 2026
+  title: "FUSED: Toward Federated Multimodal Retrieval across Sovereign Data Domains."
+  authors: "<strong>C. Xu</strong>, J. Li, M. Jin, W. I. Atlas, M. A. Spoljaric, E. C. H. Ngai, and J. Liu"
+  venue: "Proceedings of The ACM Web Conference (WWW)"
+  details: "pp. 8950-8960"
+
+- key: "wild-intelligence-ijcai-2026"
+  short_venue: "IJCAI 2026"
+  tag: "IJCAI'2026"
+  year: 2026
+  title: "Sustainable Intelligence for the Wild: Democratizing Ecological Monitoring via Knowledge-Adaptive Edge Expert Agents."
+  authors: "J. Li, H. Fang, <strong>C. Xu</strong>, M. Zhang, J. Liu, W. I. Atlas, K. M. Connors, and M. A. Spoljaric"
+  venue: "International Joint Conference on Artificial Intelligence (IJCAI)"
+  details: "Accepted"
+
+- key: "sonar-compression-wacv-2026"
+  short_venue: "WACV 2026"
+  tag: "WACV'2026"
+  year: 2026
+  title: "Self-Supervised Compression and Artifact Correction for Streaming Underwater Imaging Sonar."
+  authors: "R. Qian, <strong>C. Xu</strong>, X. Ma, H. Fang, Y. Jin, W. I. Atlas, and J. Liu"
+  venue: "Proceedings of IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  details: "pp. 4201-4211"
+
+- key: "salmon-foundation-ai-ijcai-2025"
+  short_venue: "IJCAI 2025"
+  tag: "IJCAI'2025"
+  year: 2025
+  title: "Exploring Multimodal Foundation AI and Expert-in-the-Loop for Sustainable Management of Wild Salmon Fisheries in Indigenous Rivers."
+  authors: "<strong>C. Xu</strong>, Y. Jin, S. Ma, R. Qian, H. Fang, J. Liu, X. Liu, E. C. H. Ngai, W. I. Atlas, K. M. Connors, and M. A. Spoljaric"
+  venue: "Proceedings of International Joint Conference on Artificial Intelligence (IJCAI)"
+  details: "pp. 9954-9962"
+
+- key: "salina-sensys-2024"
+  short_venue: "SenSys 2024"
+  tag: "SenSys'2024"
+  year: 2024
+  title: "SALINA: Towards Sustainable Live Sonar Analytics in Wild Ecosystems."
+  authors: "<strong>C. Xu</strong>, R. Qian, H. Fang, X. Ma, W. I. Atlas, J. Liu, and M. A. Spoljaric"
+  venue: "Proceedings of ACM Conference on Embedded Networked Sensor Systems (SenSys)"
+  details: "pp. 68-81"
