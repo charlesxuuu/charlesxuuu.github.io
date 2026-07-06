@@ -14,9 +14,13 @@ author_profile: true
     {% for note in notes %}
       <article class="note-card">
         {% if note.image %}
-          <div class="note-card__media" oncontextmenu="return false">
-            <img class="note-card__image" src="{{ note.image | relative_url }}" alt="{{ note.title }}" loading="lazy" decoding="async" draggable="false">
-          </div>
+          <div
+            class="note-card__media"
+            role="img"
+            aria-label="{{ note.title }}"
+            oncontextmenu="return false"
+            style="aspect-ratio: {{ note.aspect | default: '4 / 3' }}; background-image: url('{{ note.image | relative_url }}');"
+          ></div>
         {% endif %}
         <div class="note-card__body">
           <div class="note-card__meta">
@@ -37,3 +41,19 @@ author_profile: true
     </div>
   {% endif %}
 </section>
+
+<script>
+  (function () {
+    var notesPage = document.querySelector(".notes-page");
+    if (!notesPage) return;
+
+    ["contextmenu", "dragstart", "selectstart", "auxclick"].forEach(function (eventName) {
+      notesPage.addEventListener(eventName, function (event) {
+        if (event.target.closest(".note-card__media")) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+      }, true);
+    });
+  }());
+</script>

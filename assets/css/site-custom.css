@@ -386,10 +386,13 @@
   width: 100%;
   margin: 0 0 0.75rem;
   overflow: hidden;
-  border: 1px solid #f2f3f3;
+  border: 1px solid #e1e5e7;
   border-radius: 8px;
   background: #fff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.045);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    0 10px 24px rgba(0, 0, 0, 0.075),
+    0 2px 6px rgba(0, 0, 0, 0.05);
   break-inside: avoid;
   page-break-inside: avoid;
 }
@@ -397,34 +400,44 @@
 .note-card__media {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  background-color: #f7f8f8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.12);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+.note-card__media:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.12)),
+    radial-gradient(circle at 50% 12%, rgba(255, 255, 255, 0.2), transparent 44%);
+  opacity: 0.82;
 }
 
 .note-card__media:after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 2;
   display: block;
-}
-
-.note-card__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  object-fit: contain;
-  pointer-events: none;
-  -webkit-touch-callout: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 .note-card__body {
   padding: 0.75rem 0.85rem 0.85rem;
+  background:
+    linear-gradient(180deg, #fff, #fbfbfb);
+  border-top: 1px solid rgba(0, 0, 0, 0.035);
 }
 
 .note-card__meta {
