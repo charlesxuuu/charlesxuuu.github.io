@@ -394,12 +394,33 @@
   page-break-inside: avoid;
 }
 
+.note-card__media {
+  position: relative;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.note-card__media:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+}
+
 .note-card__image {
   display: block;
   width: 100%;
   height: auto;
   max-width: 100%;
   object-fit: contain;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .note-card__body {

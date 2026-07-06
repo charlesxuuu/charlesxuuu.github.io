@@ -14,7 +14,9 @@ author_profile: true
     {% for note in notes %}
       <article class="note-card">
         {% if note.image %}
-          <img class="note-card__image" src="{{ note.image | relative_url }}" alt="{{ note.title }}">
+          <div class="note-card__media" oncontextmenu="return false">
+            <img class="note-card__image" src="{{ note.image | relative_url }}" alt="{{ note.title }}" loading="lazy" decoding="async" draggable="false">
+          </div>
         {% endif %}
         <div class="note-card__body">
           <div class="note-card__meta">
